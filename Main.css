@@ -11,15 +11,15 @@ body {
   background-color: #f4f4f4;
   color: #333;
   padding-top: 50px; /* Gives space for the fixed header */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Container to center content */
-.container {
-  width: 80%;
-  margin: 0 auto;
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #333;
+  color: white;
 }
 
-/* Header Styling */
 header {
   background-color: #333;
   color: white;
@@ -34,6 +34,23 @@ header h1 {
 header p {
   font-size: 1.2rem;
   margin-top: 10px;
+}
+
+/* Button styling */
+button, .btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
 }
 
 /* Main Section Styling */
@@ -77,21 +94,6 @@ img {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-}
-
-/* Call to Action Button */
-.cta .btn {
-  background-color: #007BFF;
-  color: white;
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.cta .btn:hover {
-  background-color: #0056b3;
 }
 
 /* Footer Styling */
