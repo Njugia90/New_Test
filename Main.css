@@ -1,15 +1,137 @@
-/* Global Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Font family and base styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
   background-color: #f4f4f4;
-  padding: 20px;
+  color: #333;
+  padding-top: 50px; /* Gives space for the fixed header */
+}
+
+/* Container to center content */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Main Section Styling */
+main {
+  padding: 40px 0;
+  background-color: white;
+  border-top: 4px solid #007BFF;
+}
+
+h2 {
+  color: #007BFF;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Sections for content */
+.intro, .topics, .resources, .image-section, .cta {
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Call to Action Button */
+.cta .btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: #f4f4f4;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }
