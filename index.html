@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript Learning Hub</title>
+  <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="Main.css">
 </head>
 <body>
@@ -65,32 +66,8 @@
     <p>© 2025 JavaScript Learning Hub | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
   </footer>
 
-  <!-- JavaScript for Theme Toggle -->
-  <script>
-    // Get the theme toggle button and body element
-    const themeToggleButton = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    // Check if the user has a preferred theme saved in localStorage
-    if (localStorage.getItem('theme') === 'dark') {
-      body.classList.add('dark-theme');
-      themeToggleButton.textContent = 'Switch to Light Mode';
-    }
-
-    // Toggle theme on button click
-    themeToggleButton.addEventListener('click', () => {
-      body.classList.toggle('dark-theme');
-
-      // Update button text based on current theme
-      if (body.classList.contains('dark-theme')) {
-        themeToggleButton.textContent = 'Switch to Light Mode';
-        localStorage.setItem('theme', 'dark'); // Save dark theme preference
-      } else {
-        themeToggleButton.textContent = 'Switch to Dark Mode';
-        localStorage.removeItem('theme'); // Remove theme preference
-      }
-    });
-  </script>
+  <!-- Link to external JavaScript file -->
+  <script src="Main.js"></script>
 
 </body>
 </html>
